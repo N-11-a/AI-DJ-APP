@@ -1,0 +1,33 @@
+.header{
+    width: 100%;
+    vertical-align: top;
+    font-size: 30px;
+    margin-top: 0px;
+}
+#note{
+    color: black;
+    font-size: 15px;
+}
+
+body{
+    background-image:url("background\ \(1\).jpg");
+    background-size: cover;
+    
+}
+.div_speed{
+    float: left;
+}
+#disk{
+    width: 150px;
+}
+.div_volume{
+    float: right;
+}
+#voldisk{
+    width: 150px;
+}
+
+canvas{
+    border: 10px dashed white;
+
+}
