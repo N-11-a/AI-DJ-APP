@@ -9,8 +9,8 @@ function preload(){
 }
 
 function setup(){
- canvas= createCanvas(500, 500);
- canvas.position(450, 200);
+ canvas= createCanvas(600, 500);
+ canvas.center();
  video= createCapture(VIDEO);
  video.hide();
 poseNet= ml5.poseNet(video, modelLoaded);
@@ -27,7 +27,7 @@ leftwristy= result[0].pose.leftWrist.y;
 }
 
 function draw(){
-image(video, 0, 0, 500, 500);
+image(video, 0, 0, 600, 500);
 fill("blue");
 stroke("lime");
 circle(leftwristx, leftwristy, 40);
