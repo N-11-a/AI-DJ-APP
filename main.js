@@ -18,6 +18,9 @@ image(video, 0, 0, 500, 500);
 function play(){
     console.log("Its working");
     song.play();
+    song.setVolume(1);
+    song.rate(1);
+
 
 }
 
