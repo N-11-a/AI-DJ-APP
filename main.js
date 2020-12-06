@@ -1,4 +1,8 @@
 song= "";
+leftwristx= 0;
+leftwristy= 0;
+rightwristx= 0;
+rightwristy= 0;
 
 function preload(){
     song= loadSound("music.mp3");
@@ -10,10 +14,23 @@ function setup(){
  video= createCapture(VIDEO);
  video.hide();
 poseNet= ml5.poseNet(video, modelLoaded);
+poseNet.on('pose', gotPoses);
+
+}
+function gotPoses(result){
+    if(result.length>0){
+rightwristx= result[0].pose.rightWrist.x;
+rightwristy= result[0].pose.rightWrist.y;
+leftwristx= result[0].pose.leftWrist.x;
+leftwristy= result[0].pose.leftWrist.y;
+    }
 }
 
 function draw(){
 image(video, 0, 0, 500, 500);
+fill("blue");
+stroke("lime");
+circle(leftwristx, leftwristy, 40);
 }
 function play(){
     console.log("Its working");
