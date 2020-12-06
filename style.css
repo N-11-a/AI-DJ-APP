@@ -17,13 +17,13 @@ body{
 .div_speed{
     float: left;
 }
-#disk{
+.div_speed_img{
     width: 150px;
 }
 .div_volume{
     float: right;
 }
-#voldisk{
+.div_volume_img{
     width: 150px;
 }
 
