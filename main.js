@@ -31,6 +31,9 @@ image(video, 0, 0, 600, 500);
 fill("blue");
 stroke("lime");
 circle(leftwristx, leftwristy, 40);
+fill("blue");
+stroke("lime");
+circle(rightwristx, rightwristy, 40);
 }
 function play(){
     console.log("Its working");
