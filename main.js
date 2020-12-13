@@ -19,14 +19,14 @@ poseNet.on('pose', gotPoses);
 }
 function gotPoses(result){
     console.log("result");
-    if(result.length>0){
+    
 rightwristx= result[0].pose.rightWrist.x;
 rightwristy= result[0].pose.rightWrist.y;
 leftwristx= result[0].pose.leftWrist.x;
 leftwristy= result[0].pose.leftWrist.y;
 
     }
-}
+
 
 function draw(){
 image(video, 0, 0, 600, 500);
