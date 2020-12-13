@@ -34,6 +34,28 @@ circle(leftwristx, leftwristy, 40);
 fill("blue");
 stroke("lime");
 circle(rightwristx, rightwristy, 40);
+if(rightwristy>0 && rightwristy<=100){
+song.rate(0.5);
+document.getElementById("speed").innerHTML= "0.5x";
+}
+if(rightwristy>100 && rightwristy<=200){
+    song.rate(1.0);
+    document.getElementById("speed").innerHTML= "1.0x";
+    }
+    if(rightwristy>200 && rightwristy<=300){
+        song.rate(1.5);
+        document.getElementById("speed").innerHTML= "1.5x";
+        }
+        if(rightwristy>300 && rightwristy<=400){
+            song.rate(2.0);
+            document.getElementById("speed").innerHTML= "2.0x";
+
+
+            }
+            if(rightwristy>400 && rightwristy<=500){
+                song.rate(2.5);
+                document.getElementById("speed").innerHTML= "2.5x";
+                }
 }
 function play(){
     console.log("Its working");
