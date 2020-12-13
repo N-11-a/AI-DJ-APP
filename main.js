@@ -23,6 +23,7 @@ rightwristx= result[0].pose.rightWrist.x;
 rightwristy= result[0].pose.rightWrist.y;
 leftwristx= result[0].pose.leftWrist.x;
 leftwristy= result[0].pose.leftWrist.y;
+console.log(result);
     }
 }
 
@@ -48,10 +49,11 @@ if(rightwristy>100 && rightwristy<=200){
         }
         if(rightwristy>300 && rightwristy<=400){
             song.rate(2.0);
-            document.getElementById("speed").innerHTML= "2.0x";
+            document.getElementById("speed").innerHTML= "2.0x";}
 
 
-            }
+
+
             if(rightwristy>400 && rightwristy<=500){
                 song.rate(2.5);
                 document.getElementById("speed").innerHTML= "2.5x";
@@ -64,7 +66,7 @@ if(rightwristy>100 && rightwristy<=200){
                         song.setVolume(0.4);
                         document.getElementById("volume").innerHTML= "0.4x";
                         }
-                        }
+                    
                         if(leftwristy>200 && leftwristy<=300){
                             song.setVolume(0.6);
                             document.getElementById("volume").innerHTML= "0.6x";
@@ -78,7 +80,7 @@ if(rightwristy>100 && rightwristy<=200){
                                     song.setVolume(1.0);
                                     document.getElementById("volume").innerHTML= "1.0x";
                                     }
-
+                                }
 function play(){
     console.log("Its working");
     song.play();
