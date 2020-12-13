@@ -56,7 +56,29 @@ if(rightwristy>100 && rightwristy<=200){
                 song.rate(2.5);
                 document.getElementById("speed").innerHTML= "2.5x";
                 }
-}
+                if(leftwristy>0 && leftwristy<=100){
+                    song.setVolume(0.2);
+                    document.getElementById("volume").innerHTML= "0.2x";
+                    }
+                    if(leftwristy>100 && leftwristy<=200){
+                        song.setVolume(0.4);
+                        document.getElementById("volume").innerHTML= "0.4x";
+                        }
+                        }
+                        if(leftwristy>200 && leftwristy<=300){
+                            song.setVolume(0.6);
+                            document.getElementById("volume").innerHTML= "0.6x";
+                            }
+                            
+                            if(leftwristy>300 && leftwristy<=400){
+                                song.setVolume(0.8);
+                                document.getElementById("volume").innerHTML= "0.8x";
+                                }
+                                if(leftwristy>400 && leftwristy<=500){
+                                    song.setVolume(1.0);
+                                    document.getElementById("volume").innerHTML= "1.0x";
+                                    }
+
 function play(){
     console.log("Its working");
     song.play();
